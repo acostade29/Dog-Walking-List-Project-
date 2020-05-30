@@ -11,6 +11,18 @@ const dogSchema = new Schema({
         default: "Mixed"
     },
     age: {
-        type: Number
-    }
-})
+        type: Number,
+        default: 0
+    },
+    owner: {
+        type: Schema.Types.ObjectId,
+        Ref:"User"
+    },
+    ownerName: {
+        type: String,
+    },
+    comments: []
+}, {lifeStamps: true}
+);
+
+module.exports = mongoose.model('Dog',dogSchema);
