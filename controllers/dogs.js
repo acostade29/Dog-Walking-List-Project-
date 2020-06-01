@@ -11,7 +11,8 @@ module.exports = {
     update,
     show,
     comment,
-    deleteComment
+    deleteComment,
+    
 };
 
 function index(req, res) {
@@ -22,8 +23,8 @@ function index(req, res) {
 
 function myDogs(req, res) {
     Dog.find({owner: req.user._id}, function(err, dogs) {
-        res.render('../views/dogs/myDogs', {user: req.user, dogs: dogs})
-        // res.render('dogs/myDogs', {user: req.user, dogs: dogs})
+       
+        res.render('dogs/myDogs', {user: req.user, dogs: dogs})
     })
 }
 
@@ -34,6 +35,7 @@ function newDog(req, res) {
 function create(req, res) {
     req.body.owner = req.user._id;
     req.body.ownerName = req.user.name;
+    console.log(req.body);
     const newDog = new Dog(req.body);
     newDog.save(function(err) {
         if (err) return res.redirect('/dogs/new');
@@ -57,7 +59,7 @@ function edit(req, res) {
 
 function update(req, res) {
     Dog.findByIdAndUpdate(req.params.id, req.body, {new: true}, function(err) {
-        res.redirect('/dogs/myDogs')
+        res.redirect('dogs/myDogs')
     })
 }
 

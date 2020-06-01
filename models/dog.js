@@ -21,6 +21,9 @@ const dogSchema = new Schema({
     ownerName: {
         type: String,
     },
+    address: {
+        type: String,
+    },
     comments: []
 }, {lifeStamps: true}
 );
