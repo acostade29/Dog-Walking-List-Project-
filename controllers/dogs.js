@@ -11,7 +11,7 @@ module.exports = {
     update,
     show,
     comment,
-    deleteComment,
+    deleteComment
     
 };
 
@@ -20,6 +20,8 @@ function index(req, res) {
         res.render('dogs/index', {user: req.user, dogs: dogs})
     })
 }
+
+
 
 function myDogs(req, res) {
     Dog.find({owner: req.user._id}, function(err, dogs) {
