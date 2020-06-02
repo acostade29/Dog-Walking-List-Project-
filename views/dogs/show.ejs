@@ -16,10 +16,13 @@
             <% dog.comments.forEach((d) => { %>
                 <dd><%= d.comments %> - <%= d.commentBy %> </dd>
             <% }) %>
-
             <dt>Address:</dt>
             <dd><%= dog.address %>location</dd><br>
-            
+            <form action="/dogs/"></form>
+
+
+
+
             <div class="row">
                 <div class="input-field col s12">
                   <form action="/dogs/<%= dog._id %>/comment" method="POST">

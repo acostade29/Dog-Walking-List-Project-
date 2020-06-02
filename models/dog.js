@@ -2,8 +2,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const WalkSchema = new Schema ({
-    timeWalked: String,
-    miles: Number,
+    
+    time: {
+    type: String,
+    enum: ['10min','20min','30min','more'],
+    },
+
+    miles: {
+       type: String, 
+       enum: ['1 mile','2 miles','2+miles'],
+    } 
 })
 
 
