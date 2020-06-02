@@ -12,13 +12,8 @@
 
 body {
   background-image:
-   url("../images/Screen\ Shot\ 2020-06-02\ at\ 9.02.27\ AM.png"),
-   url("../images/cachito.jpg");
-   background-position:
-   top right, /* this positions the first image */
-   bottom ; /* this positions the second image */
-  background-repeat:
-   no-repeat; /* this applies to both images */
+   url("../images/Screen\ Shot\ 2020-06-02\ at\ 9.02.27\ AM.png");
+  
    
 }
   
@@ -26,8 +21,3 @@ body {
 
   
 
-body {
-background-size: cover;
-background-position: bottom;
-
-}
