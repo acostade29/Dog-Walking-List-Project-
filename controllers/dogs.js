@@ -36,7 +36,7 @@ function newDog(req, res) {
 
 function create(req, res) {
     req.body.owner = req.user._id;
-    req.body.ownerName = req.user.name;
+    // req.body.ownerName = req.user.name;
     console.log(req.body);
     const newDog = new Dog(req.body);
     newDog.save(function(err) {

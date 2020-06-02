@@ -17,8 +17,9 @@ body {
    background-position:
    top right, /* this positions the first image */
    bottom ; /* this positions the second image */
- background-repeat:
+  background-repeat:
    no-repeat; /* this applies to both images */
+   font-family: 'Architects Daughter', cursive;
 }
   
   
