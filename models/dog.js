@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const WalkSchema = new Schema ({
+const walkSchema = new Schema ({
     
     time: {
     type: String,
@@ -39,7 +39,7 @@ const dogSchema = new Schema({
         type: String,
     },
     comments: [],
-    Walk: [WalkSchema]
+    Walk: [walkSchema]
 }, {lifeStamps: true}
 );
 

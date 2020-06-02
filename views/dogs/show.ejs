@@ -20,16 +20,16 @@
             <dd><%= dog.address %>location</dd><br>
 
 
-            <form action="/dogs/ <%= dog._id %>/comment" method="POST">
-              <label> time:
-                <select name="Walk">
+            <form action="/dogs/ <%= dog._id %>/walks" method="POST">
+              <label> time: </label>
+                <select name="Walks">
                 <option value="10min">10min</option>
                 <option value="20min">20min</option>
                 <option value="30min">30min</option>
                 <option value="more">more</option>
                 </select>
 
-              </label>
+              
             </form>
 
 

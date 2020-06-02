@@ -1,4 +1,4 @@
-const Walk = require('../models/dog');
+const Dog = require('../models/dog');
 
 
 module.exports= {
