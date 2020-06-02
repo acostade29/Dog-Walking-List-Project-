@@ -1,6 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const WalkSchema = new Schema ({
+    timeWalked: String,
+    miles: Number,
+})
+
+
 const dogSchema = new Schema({
     name: {
         type: String,
@@ -24,7 +30,8 @@ const dogSchema = new Schema({
     address: {
         type: String,
     },
-    comments: []
+    comments: [],
+    Walk: [WalkSchema]
 }, {lifeStamps: true}
 );
 
