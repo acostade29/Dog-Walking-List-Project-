@@ -12,10 +12,12 @@
             <dd><%= dog.age %> years old</dd><br>
             <dt>Owner:</dt>
             <dd><%= dog.ownerName %></dd><br>
+            
             <dt>Comments:</dt>
             <% dog.comments.forEach((d) => { %>
                 <dd><%= d.comments %> - <%= d.commentBy %> </dd>
             <% }) %>
+            <br></br>
             <dt>Address:</dt>
             <dd><%= dog.address %>location</dd><br>
 
@@ -28,12 +30,26 @@
                 <option value="30min">30min</option>
                 <option value="more">more</option>
                 </select>
+<br></br> 
+                <label> miles: </label>
+                <select name="Walks">
+                <option value="1mile">1mile</option>
+                <option value="2miles">2miles</option>
+                <option value="2+miles">2+miles</option>
+                <option value="more">more</option>
+                </select>
 
-              
+
+
+
+
+
             </form>
 
 
 
+              
+            </form>
             <div class="row">
                 <div class="input-field col s12">
                   <form action="/dogs/<%= dog._id %>/comment" method="POST">
@@ -47,6 +63,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
+
+  
 
 <%- include('../partials/footer') %>

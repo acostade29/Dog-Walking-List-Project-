@@ -5,7 +5,6 @@ module.exports= {
     create
 }
 
-
 function create(req, res) {
     console.log(req.body, req.params.id)
     //crete a destination and append to a dog
@@ -18,3 +17,5 @@ function create(req, res) {
     })
 
 }
+
+ 
