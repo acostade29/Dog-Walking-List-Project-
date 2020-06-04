@@ -1,5 +1,5 @@
 <%- include('../partials/header'); %>
-<h2>All Dogs</h2>
+<h2><%= user.name %> </h2>
 <% dogs.forEach((dog) => { %>
     <div class="row">
         <div class="col s6 m3">
@@ -15,6 +15,11 @@
                 <dd><%= dog.ownerName %></dd><br>
                 <dt>Address:</dt>
                 <dd><%= dog.address%></dd><br>
+                <dt>time:</dt>
+                <dd><%= dog.time %> </dd><br>
+                <dt>Owner Name:</dt>
+                <dd><%= dog.miles %> </dd><br>
+                </form>
                 <form class="red-text center" action="/dogs/<%= dog._id %>">
                     <button class="btn green waves-effect black-text waves-light" type="submit">Details</button>
                 </form>

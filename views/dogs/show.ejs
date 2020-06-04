@@ -21,9 +21,35 @@
             <dt>Address:</dt>
             <dd><%= dog.address %>location</dd><br>
 
+            <form action="/dogs<%= dog._id %>/walks" method="POST">
+              <label> time: </label>
+                <select name="Walks">
+                <option value="10min">10min</option>
+                <option value="20min">20min</option>
+                <option value="30min">30min</option>
+                <option value="more">more</option>
+                </select>
+            <br></br> 
+                <label> miles: </label>
+                <select name="Walks">
+                <option value="1mile">1mile</option>
+                <option value="2miles">2miles</option>
+                <option value="2+miles">2+miles</option>
+                <option value="more">more</option>
+                </select>
+                <button class="btn waves-effect waves-light" type="submit">walks
+                  <i class="material-icons right">send</i>
+                </button>
+            </form>
 
-    
 
+
+
+            <dt>time:</dt>
+            <dd><%= dog.time %> </dd><br>
+            <dt>Owner Name:</dt>
+            <dd><%= dog.miles %> </dd><br>
+            </form>
               
             <form>
             <div class="row">
