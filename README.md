@@ -9,9 +9,9 @@
 <img src="public/images/Screen Shot 2020-06-02 at 9.02.27 AM.png">
 
 
-
+<p align="center">
 <img src="public/images/cachito.jpg">
-
+</p>
 ### Date: 6/04/2020
 #### By: Alfonso D Rojas Hernandez 
 #### | [GitHub](https://github.com/acostade29) | [LinkedIn](https://www.linkedin.com/in/alfonso-d-rojas-hernandez-2253a0105/)| 
@@ -125,5 +125,8 @@
 - Thank you to all my classmates and instructors of this course. Everybody help me to achieve and make this app to work and function properly.
 Thank you!
 
-<img src="public/images/Dog.jpeg">
 
+<p align="center">
+
+<img src="public/images/Dog.jpeg">
+ </p>
