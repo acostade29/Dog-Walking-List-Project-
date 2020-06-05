@@ -82,10 +82,11 @@
 
 
 
-# Trelloboard and structure of the website
-<a href="https://trello.com/b/Ly4uhb83/dog-walking">
+# Trelloboard and structure of the website [here](https://trello.com/b/Ly4uhb83/dog-walking).
 
-<img src="public/images/Dog.jpeg">
+
+
+
 
 
 
@@ -105,4 +106,5 @@
 - Thank you to all my classmates and instructors of this course. Everybody help me to achieve and make this app to work and function properly.
 Thank you!
 
+<img src="public/images/Dog.jpeg">
 
