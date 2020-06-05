@@ -117,7 +117,7 @@
 
 
 ## Future Updates 
-- develop and add an API for miles tracker and map.
+- Develop and add an API for miles tracker and map.
 -  Create a better display for the board. animation background. 
 -  Create a message interface between users.  
 
