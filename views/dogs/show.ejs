@@ -12,18 +12,21 @@
             <dd><%= dog.age %> years old</dd><br>
             <dt>Owner:</dt>
             <dd><%= dog.ownerName %></dd><br>
-            
+            <dt>Address:</dt>
+            <dd><%= dog.address %>location</dd><br>
             <dt>Comments:</dt>
             <% dog.comments.forEach((d) => { %>
                 <dd><%= d.comments %> - <%= d.commentBy %> </dd>
             <% }) %>
-            <br></br>
-            <dt>Address:</dt>
-            <dd><%= dog.address %>location</dd><br>
+           
 
-            <form action="/dogs<%= dog._id %>/walks" method="POST">
+
+
+
+
+            <form action="/dogs/<%= dog._id %>/walks" method="POST">
               <label> time: </label>
-                <select name="Walks">
+                <select name="time">
                 <option value="10min">10min</option>
                 <option value="20min">20min</option>
                 <option value="30min">30min</option>
@@ -31,7 +34,7 @@
                 </select>
             <br></br> 
                 <label> miles: </label>
-                <select name="Walks">
+                <select name="miles">
                 <option value="1mile">1mile</option>
                 <option value="2miles">2miles</option>
                 <option value="2+miles">2+miles</option>
@@ -40,18 +43,43 @@
                 <button class="btn waves-effect waves-light" type="submit">walks
                   <i class="material-icons right">send</i>
                 </button>
-            </form>
+                
+              </form>
+
+
+
+              <% if (dog.walks.length) { %>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>time.</th>
+                      <th>Miles</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <% dog.walks.forEach((d) => { %>
+                      <tr>
+                        <td><%= d.time %></td>
+                        <td><%= d.miles %></td>
+                      </tr>
+                    <% }); %>
+                  </tbody>
+                </table>
+              <% } else { %>
+                <center><h5>No time and miles set up yet</h5></center>
+              <% } %>
+
+            
+
+
+             
 
 
 
 
-            <dt>time:</dt>
-            <dd><%= dog.time %> </dd><br>
-            <dt>Owner Name:</dt>
-            <dd><%= dog.miles %> </dd><br>
-            </form>
-              
-            <form>
+
+
+            
             <div class="row">
                 <div class="input-field col s12">
                   <form action="/dogs/<%= dog._id %>/comment" method="POST">
@@ -65,8 +93,6 @@
         </div>
       </div>
     </div>
-  </div> 
-
-  
+  </div>
 
 <%- include('../partials/footer') %>

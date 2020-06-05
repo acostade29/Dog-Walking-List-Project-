@@ -39,7 +39,7 @@ const dogSchema = new Schema({
         type: String,
     },
     comments: [],
-    Walk: [walkSchema]
+    walks: [walkSchema]
 }, {lifeStamps: true}
 );
 
