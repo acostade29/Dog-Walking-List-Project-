@@ -34,7 +34,7 @@
 
 
 ## Motivation:  
-### One of my previous jobs in Boston to help my friend Nelson starting his small company  as a dog Walker. We worked together and a small an personal app gets really handy for the person that works in this field. 
+### One of my previous jobs in Boston was helping my friend Nelson start his own dog walking service. In this feild, a small APP like this comes in handy.
 
 
 ### ***Description***
