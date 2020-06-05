@@ -2,7 +2,7 @@
 
 <p align="center">
 
- <img img width="460" height="300" src="/public/images/ARH Logo (3).png">
+ <img  src="/public/images/ARH Logo (3).png">
 
  </p>
 
