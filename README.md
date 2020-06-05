@@ -87,6 +87,7 @@
    
 
 ### ***Technologies Used***
+<img src="public/images/github jedi.jpeg">
 <img src="public/images/favicon.ico">
 <img src="public/images/herokulogo.png">
 <img src="public/images/cssjavahtml.jpeg">
