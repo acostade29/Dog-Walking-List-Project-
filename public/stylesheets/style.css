@@ -4,8 +4,15 @@
   margin-left: 15px;
 }
 
+.card {
+  background-image: url("public/images/cachito.jpg");
+}
+
+
 .card .card-content .card-title {
   margin-bottom: 10px;
+  background-image: url("public/images/cachito.jpg");
+
 }
 
 #search-row form {
