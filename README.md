@@ -28,7 +28,7 @@
 ## User Persona :
 ### Nelson, as a small business owner of a dog walking company is trying to find an app for their employees to be able to track the amount of dogs they need to walk.
 
-# User Experience#1:
+# User Experience#2:
 ## User Persona :
 ### Mariela, one of Nelson's employees is new in the job and she is not sure where are the location and the dogs she needs to walk. this app will allow her track daily the amount of dogs she needs to wall and provide any feedback to review. 
 
